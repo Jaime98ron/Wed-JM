@@ -9,7 +9,7 @@ const invitationContent =
     document.getElementById("invitationContent");
 
 // Bloquea el desplazamiento hasta que se abra la invitación.
-document.documentElement.classList.add("scroll-locked");
+// document.documentElement.classList.add("scroll-locked"); (COMENTADO PARA PRUEBAS)
 
 window.addEventListener("pageshow", () => {
     if (document.documentElement.classList.contains("scroll-locked")) {
