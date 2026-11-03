@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <script>
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
+    </script>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Jaime & Mayra | 29.05.2027</title>
+
+     <!-- FAVICON -->
+    
+    <link
+        rel="icon"
+        type="image/png"
+        href="./img/favicon.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="./img/favicon.png"
+    >
+
+    <meta
+        name="theme-color"
+        content="#7A1F3D"
+    >
+
+    <meta
+        name="description"
+        content="Invitación de boda de Jaime y Mayra. 29 de mayo de 2027."
+    >
+
+    <!-- ==================================================
+         FUENTES
+    ================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Allura&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==================================================
+         CSS
+    ================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/animations.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     PORTADA
+================================================== -->
+
+<section
+    class="hero"
+    id="inicio"
+>
+
+    <div class="hero-photo">
+
+        <!-- FOTO DE PORTADA -->
+
+        <img
+            src="./img/portada.JPG"
+            alt="Jaime y Mayra"
+            class="hero-image"
+        >
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-date">
+            29 · 05 · 2027
+        </div>
+
+        <div class="hero-monogram">
+            JM
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         PARTE INFERIOR DE PORTADA
+    ================================================== -->
+
+    <div class="hero-bottom">
+
+        <p class="eyebrow">
+            SAVE THE DATE
+        </p>
+
+        <h1>
+
+            Jaime
+
+            <span>
+                &
+            </span>
+
+            Mayra
+
+        </h1>
+
+        <p class="hero-venue">
+            Hacienda San Ángel
+        </p>
+
+        <p class="hero-time">
+            7:00 PM
+        </p>
+
+
+        <button
+            class="start-button"
+            id="startButton"
+            type="button"
+            aria-label="Abrir invitación"
+        >
+
+            <span class="play-icon">
+                ▶
+            </span>
+
+            <span>
+                Abrir invitación
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONTENIDO PRINCIPAL
+================================================== -->
+
+<main id="invitationContent">
+
+
+
+<!-- ==================================================
+     MENSAJE
+================================================== -->
+
+<section
+    class="section message-section"
+>
+
+    <div class="section-inner">
+
+        <div class="small-monogram">
+            JM
+        </div>
+
+        <p class="section-kicker">
+            Nuestra historia
+        </p>
+
+        <p class="message-text">
+
+            Hoy comienza un nuevo capítulo
+            en nuestra historia, y sería un honor
+            contar con su presencia para celebrar
+            este momento tan especial.
+
+        </p>
+
+
+        <div class="date-display">
+
+            <span class="date-number">
+                29
+            </span>
+
+            <span class="date-month">
+                Mayo
+            </span>
+
+            <span class="date-year">
+                2027
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CUENTA REGRESIVA
+================================================== -->
+
+<section class="countdown-section">
+
+    <div class="countdown-photo">
+
+        <div class="photo-placeholder">
+
+            <img
+                src="./img/countdown.JPG"
+                alt="Jaime y Mayra"
+                class="countdown-image"
+            >
+
+        </div>
+
+
+        <div class="countdown-gradient"></div>
+
+
+        <div class="countdown-content">
+
+            <p class="countdown-kicker">
+                TAN SOLO
+            </p>
+
+            <p class="countdown-script">
+                faltan
+            </p>
+
+
+            <div class="countdown">
+
+                <div class="time-box">
+
+                    <span id="days">
+                        000
+                    </span>
+
+                    <small>
+                        DÍAS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="hours">
+                        00
+                    </span>
+
+                    <small>
+                        HORAS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="minutes">
+                        00
+                    </span>
+
+                    <small>
+                        MINUTOS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="seconds">
+                        00
+                    </span>
+
+                    <small>
+                        SEGUNDOS
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <p class="countdown-footer">
+                PARA NUESTRO GRAN DÍA
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     LUGAR
+================================================== -->
+
+<section
+    class="section location-section"
+>
+
+    <div class="section-inner">
+
+        <div class="small-monogram">
+            JM
+        </div>
+
+        <p class="section-kicker">
+            El gran día
+        </p>
+
+        <h2>
+            Hacienda San Ángel
+        </h2>
+
+        <p class="location-time">
+            7:00 PM
+        </p>
+
+        <div class="gold-line"></div>
+
+
+        <div class="event-detail">
+
+            <h3>
+                Ceremonia civil
+            </h3>
+
+            <p>
+                La ceremonia y recepción
+                serán en el mismo lugar.
+            </p>
+
+        </div>
+
+
+        <!-- GOOGLE MAPS -->
+
+        <a
+            href="https://maps.app.goo.gl/JpT9z7JT2jTuV5EY9"
+            class="gold-button"
+            id="mapsButton"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <span>
+                ⌖
+            </span>
+
+            Ver ubicación
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     DETALLES
+================================================== -->
+
+<section
+    class="section details-section"
+>
+
+    <div class="section-inner">
+
+        <p class="section-kicker">
+            Para nuestros invitados
+        </p>
+
+        <h2>
+            Algunos detalles
+        </h2>
+
+
+        <!-- ==================================================
+             DRESS CODE
+        ================================================== -->
+
+        <div class="detail-card">
+
+            <div class="detail-icon">
+                ✦
+            </div>
+
+            <h3>
+                Código de vestimenta
+            </h3>
+
+            <p class="dress-code">
+                Formal / Vaquero Formal
+            </p>
+
+            <p>
+                Elegancia y tradición para
+                compartir nuestro gran día.
+            </p>
+
+        </div>
+
+
+        <div class="detail-divider"></div>
+
+
+        <!-- ==================================================
+             CELEBRACIÓN PARA ADULTOS
+        ================================================== -->
+
+        <div class="detail-card">
+
+            <div class="detail-icon">
+                ♡
+            </div>
+
+            <h3>
+                Celebración para adultos
+            </h3>
+
+            <p>
+                En esta ocasión hemos decidido
+                celebrar nuestra boda en compañía
+                de nuestros invitados adultos.
+            </p>
+
+            <p>
+                Gracias por comprender y acompañarnos
+                en esta noche tan especial.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MESA DE REGALOS
+================================================== -->
+
+<section
+    class="section gifts-section"
+>
+
+    <div class="section-inner">
+
+        <div class="gift-envelope">
+
+            <div class="gift-envelope-flap"></div>
+
+            <div class="gift-seal">
+                JM
+            </div>
+
+        </div>
+
+
+        <p class="section-kicker">
+            Un detalle especial
+        </p>
+
+        <h2>
+            Mesa de regalos
+        </h2>
+
+        <div class="gold-line"></div>
+
+
+        <div class="gift-options">
+            <article class="gift-option">
+                <h3>En efectivo</h3>
+                <p>
+                    Tu presencia es nuestro mejor regalo. Si deseas tener un detalle con nosotros,
+                    puedes hacerlo en efectivo el día de la celebración.
+                </p>
+            </article>
+
+            <article class="gift-option">
+                <h3>Lista de Amazon</h3>
+                <p>
+                    Si quieres obsequiarnos algo especial para esta nueva etapa,
+                    preparamos una lista en Amazon.
+                </p>
+                <a
+                    href="https://www.amazon.com.mx/wedding/share/JyM-Wed29052027"
+                    class="gift-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ver lista de Amazon
+                </a>
+            </article>
+
+            <article class="gift-option">
+                <h3>Transferencia</h3>
+                <p>
+                    Si deseas apoyarnos con un regalo, puedes hacerlo mediante transferencia.
+                    Te sugerimos incluir tu nombre en el concepto para identificarla.
+                </p>
+                <dl class="gift-transfer-details">
+                    <div class="gift-transfer-row">
+                        <dt>Titular</dt>
+                        <dd>Jaime Rodriguez</dd>
+                    </div>
+                    <div class="gift-transfer-row">
+                        <dt>Banco</dt>
+                        <dd>BBVA</dd>
+                    </div>
+                    <div class="gift-transfer-row">
+                        <dt>CLABE</dt>
+                        <dd class="gift-clabe">012 150 01512106984 0</dd>
+                    </div>
+                </dl>
+            </article>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONFIRMACIÓN DE ASISTENCIA
+================================================== -->
+
+<section
+    class="section rsvp-section"
+>
+
+
+    <!-- ==================================================
+         FOTO RSVP
+    ================================================== -->
+
+    <div class="rsvp-photo">
+
+        <div class="photo-placeholder">
+
+            <img
+                src="./img/rsvp.jpg"
+                alt="Jaime y Mayra"
+                class="rsvp-image"
+            >
+
+        </div>
+
+        <div class="rsvp-photo-gradient"></div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         TARJETA RSVP
+    ================================================== -->
+
+    <div class="rsvp-card">
+
+        <div class="gift-seal rsvp-seal">
+            JM
+        </div>
+
+
+        <p class="section-kicker">
+            Será un honor contar contigo
+        </p>
+
+
+        <h2>
+            Confirma tu asistencia
+        </h2>
+
+
+
+        <form id="rsvpForm">
+
+
+            <!-- ==================================================
+                 CÓDIGO DE INVITACIÓN
+            ================================================== -->
+
+            <label for="guestCode">
+                Código de invitación
+            </label>
+
+
+            <input
+                type="text"
+                id="guestCode"
+                name="guestCode"
+                placeholder="Ejemplo: J001"
+                maxlength="7"
+                autocomplete="off"
+                required
+            >
+
+
+            <p
+                class="guest-info"
+                id="guestInfo"
+            >
+                Ingresa tu código de invitación.
+            </p>
+
+
+
+            <!-- ==================================================
+                 ASISTENCIA
+            ================================================== -->
+
+            <p class="question">
+                ¿Nos acompañarás?
+            </p>
+
+
+            <div class="attendance-options">
+
+
+                <button
+                    type="button"
+                    class="attendance-button"
+                    data-response="Sí, estaré ahí"
+                >
+
+                    ✓ Sí, ahí estaré
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="attendance-button no"
+                    data-response="No podré asistir"
+                >
+
+                    No podré asistir
+
+                </button>
+
+
+            </div>
+
+
+            <input
+                type="hidden"
+                id="attendance"
+                name="attendance"
+            >
+
+
+
+            <!-- ==================================================
+                 ACOMPAÑANTES
+            ================================================== -->
+
+            <div
+                class="companions-container"
+                id="companionsContainer"
+            >
+
+
+                <label for="companions">
+                    Número de acompañantes
+                </label>
+
+
+                <div class="custom-select" id="companionsCustom">
+
+    <button
+        type="button"
+        class="custom-select-trigger"
+        id="companionsTrigger"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+        aria-controls="companionsOptions"
+    >
+        <span id="companionsSelected">
+            0 acompañantes
+        </span>
+
+        <span class="custom-select-arrow">⌄</span>
+    </button>
+
+    <div
+        class="custom-select-options"
+        id="companionsOptions"
+        role="listbox"
+        aria-label="Número de acompañantes"
+        hidden
+    >
+
+        <button type="button" role="option" data-value="0">
+            0 acompañantes
+        </button>
+
+        <button type="button" role="option" data-value="1">
+            1 acompañante
+        </button>
+
+        <button type="button" role="option" data-value="2">
+            2 acompañantes
+        </button>
+
+        <button type="button" role="option" data-value="3">
+            3 acompañantes
+        </button>
+
+        <button type="button" role="option" data-value="4">
+            4 acompañantes
+        </button>
+
+    </div>
+
+    <select
+        id="companions"
+        name="acompanantes"
+        class="native-select-hidden"
+        aria-hidden="true"
+        tabindex="-1"
+    >
+        <option value="0">0 acompañantes</option>
+        <option value="1">1 acompañante</option>
+        <option value="2">2 acompañantes</option>
+        <option value="3">3 acompañantes</option>
+        <option value="4">4 acompañantes</option>
+    </select>
+
+</div>
+
+
+                <p
+                    class="companions-info"
+                    id="companionsInfo"
+                >
+                    Primero ingresa tu código de invitación.
+                </p>
+
+
+
+                <!-- ==================================================
+                     CAMPOS DINÁMICOS
+                ================================================== -->
+
+                <div
+                    id="companionsFields"
+                    class="companions-fields"
+                ></div>
+
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 BOTÓN CONFIRMAR / ACTUALIZAR
+            ================================================== -->
+
+            <button
+                type="submit"
+                class="confirm-button"
+            >
+                Confirmar asistencia
+            </button>
+
+
+        </form>
+
+
+
+        <!-- ==================================================
+             MENSAJE
+        ================================================== -->
+
+        <p
+            class="rsvp-message"
+            id="rsvpMessage"
+        ></p>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CIERRE
+================================================== -->
+
+<section class="closing-section">
+
+
+    <div class="closing-content">
+
+
+        <div class="closing-monogram">
+            JM
+        </div>
+
+
+        <p class="closing-script">
+            ¡Te esperamos!
+        </p>
+
+
+        <p class="closing-date">
+            29 · 05 · 2027
+        </p>
+
+
+        <p class="closing-names">
+            Jaime & Mayra
+        </p>
+
+
+        <div class="closing-line"></div>
+
+
+        <p class="closing-thanks">
+            Gracias por formar parte
+            de nuestra historia.
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
+
+
+

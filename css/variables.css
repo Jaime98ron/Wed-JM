@@ -1,0 +1,46 @@
+:root {
+
+    /* ==============================
+       PALETA
+    ============================== */
+
+    --guinda: #741F3D;
+
+    --guinda-dark: #52152B;
+
+    --guinda-light: #963B5C;
+
+    --gold: #B99A58;
+
+    --gold-light: #D9C79C;
+
+    --ivory: #FAF7F2;
+
+    --cream: #F3EDE5;
+
+    --white: #FFFFFF;
+
+    --text: #282525;
+
+    --gray: #77716C;
+
+
+    /* ==============================
+       TIPOGRAFÍAS
+    ============================== */
+
+    --title: "Cormorant Garamond", serif;
+
+    --textFont: "Montserrat", sans-serif;
+
+    --script: "Allura", cursive;
+
+
+    /* ==============================
+       SOMBRAS
+    ============================== */
+
+    --shadow:
+        0 15px 40px rgba(0, 0, 0, .12);
+
+}

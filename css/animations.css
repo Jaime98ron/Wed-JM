@@ -1,0 +1,108 @@
+/* ==================================================
+   ENTRADA GENERAL
+================================================== */
+
+.hero-photo {
+    animation: photoEnter 1.5s ease both;
+}
+
+.hero-bottom {
+    animation: contentEnter 1.4s ease .3s both;
+}
+
+@keyframes photoEnter {
+    from {
+        opacity: 0;
+        transform: scale(1.03);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes contentEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==================================================
+   ELEMENTOS AL HACER SCROLL
+================================================== */
+
+.section-inner,
+.countdown-content,
+.rsvp-card,
+.closing-content,
+.hero-image,
+.countdown-image,
+.rsvp-image {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.section-inner.reveal,
+.countdown-content.reveal,
+.rsvp-card.reveal,
+.closing-content.reveal,
+.hero-image.reveal,
+.countdown-image.reveal,
+.rsvp-image.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==================================================
+   HOVER
+================================================== */
+
+.gold-button,
+.gift-button,
+.confirm-button,
+.attendance-button {
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease;
+}
+
+.gold-button:hover,
+.gift-button:hover {
+    background: var(--guinda);
+    color: white;
+}
+
+.confirm-button:hover {
+    background: var(--guinda-dark);
+}
+
+
+/* ==================================================
+   BOTÓN PLAY
+================================================== */
+
+.start-button:active .play-icon {
+    transform: scale(.94);
+}
+
+
+/* ==================================================
+   OCULTAR PORTADA DESPUÉS DEL DESPLAZAMIENTO
+================================================== */
+
+body.started .hero {
+    display: none;
+}
