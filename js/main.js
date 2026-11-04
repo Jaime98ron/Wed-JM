@@ -1282,7 +1282,7 @@ rsvpForm.addEventListener(
             rsvpMessage.textContent =
                 `¡Gracias, ${guestData.nombre}! Tu respuesta fue enviada para ${personas} ${
                     personas === 1 ? "persona" : "personas"
-                }. La página no puede confirmar el registro.`;
+                }.`;
 
             if (confirmButton) {
                 confirmButton.textContent = "Volver a enviar";
